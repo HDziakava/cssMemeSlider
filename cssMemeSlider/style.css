@@ -1,0 +1,58 @@
+body {
+  background-color: #000000;
+}
+
+.slider-background {
+  background-color: #ffffff;
+  height: 600px;
+  width: 650px;
+  margin: auto;
+  padding: 80px 40px 40px;
+  border-radius: 30px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: relative;
+}
+
+.meme-description {
+  width: 100%;
+}
+
+.img-description-container {
+  max-width: 412px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+img {
+  margin-bottom: 80px;
+}
+
+.dots-container {
+  display: flex;
+  flex-direction: row;
+  width: 120px;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 180px;
+  right: 160px;
+}
+
+.dot {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background-color: #fff;
+  margin: 0;
+}
+
+.dot-container {
+  padding: 5px;
+  cursor: pointer;
+}
