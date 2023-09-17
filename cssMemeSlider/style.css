@@ -60,7 +60,7 @@ p {
 }
 
 .dot-container {
-  padding: 1%;
+  padding: 5% 1%;
   cursor: pointer;
 }
 
@@ -114,4 +114,40 @@ a:hover .dot {
 .slider-wrapper {
   position: relative;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .slider {
+    height: 50%;
+    width: 50%;
+  }
+
+  img {
+    margin-bottom: 20%;
+  }
+  .dots-container {
+    bottom: 15%;
+    left: 0;
+    width: 35%;
+    margin: 1em auto;
+  }
+
+  .dot {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+
+  .dot-container {
+    padding: 5%;
+  }
+}
+
+@media (max-width: 545px) {
+  .slider {
+    height: 40%;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }
