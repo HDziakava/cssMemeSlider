@@ -4,6 +4,7 @@
 
 body {
   background-color: #000000;
+  margin: 0;
 }
 
 .slider-parent {
@@ -16,8 +17,10 @@ body {
 
 .slider {
   background-color: #ffffff;
-  height: 65%;
+  max-height: 90vh;
+  height: 65vw;
   width: 50%;
+  max-width: 80vh;
   padding: 5% 6%;
   border-radius: 10%;
   display: flex;
@@ -62,6 +65,10 @@ p {
 .dot-container {
   padding: 5% 1%;
   cursor: pointer;
+}
+
+.dot-container:first-child .dot {
+  background: rgb(181, 181, 181);
 }
 
 a:hover .dot {
@@ -149,5 +156,13 @@ a:hover .dot {
 
   p {
     font-size: 1rem;
+  }
+
+  img {
+    margin-bottom: 10%;
+  }
+
+  .dots-container {
+    bottom: 10%;
   }
 }
