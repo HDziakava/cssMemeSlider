@@ -6,23 +6,27 @@ body {
   background-color: #000000;
 }
 
+.slider-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
 .slider {
   background-color: #ffffff;
-  height: 650px;
-  width: 650px;
-  margin: auto;
-  padding: 80px 40px;
-  border-radius: 30px;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  height: 65%;
+  width: 50%;
+  padding: 5% 6%;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
 }
 
 .slider-container {
   scroll-behavior: smooth;
-  max-width: 412px;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -31,14 +35,16 @@ body {
 
 .meme-description {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
-  margin-bottom: 7px;
+  margin-bottom: 1.5%;
 }
 
 p {
-  font-size: 15px;
+  font-size: 1.1rem;
 }
 
 .dots-container {
@@ -47,13 +53,14 @@ p {
   flex-direction: row;
   justify-content: space-between;
   position: absolute;
-  width: 120px;
-  bottom: 105px;
-  right: 119px;
+  width: 25%;
+  bottom: 0.5%;
+  right: 0;
+  margin: 1em 0;
 }
 
 .dot-container {
-  padding: 5px;
+  padding: 1%;
   cursor: pointer;
 }
 
@@ -62,9 +69,8 @@ a:hover .dot {
 }
 
 .dot {
-  display: inline-flex;
-  width: 13px;
-  height: 13px;
+  width: 1rem;
+  height: 1rem;
   background: #000000;
   border-radius: 50%;
 }
@@ -103,4 +109,9 @@ a:hover .dot {
   .dot-container:nth-child(4)
   .dot {
   background: rgb(181, 181, 181);
+}
+
+.slider-wrapper {
+  position: relative;
+  width: 100%;
 }
